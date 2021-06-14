@@ -4,7 +4,12 @@
   <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="ionicons.min.css">
+    <link rel="stylesheet" href="Footer-Basic.css">
+    <link rel="stylesheet" href="">
   <style>
+  @import url(https://fonts.googleapis.com/css?family=Berkshire Swash);
     body {
       display: flex;
       height: 100vh;
@@ -23,28 +28,39 @@
       box-shadow: rgba(156, 172, 172, 0.2) 0px 2px 2px, rgba(156, 172, 172, 0.2) 0px 4px 4px, rgba(156, 172, 172, 0.2) 0px 8px 8px, rgba(156, 172, 172, 0.2) 0px 16px 16px, rgba(156, 172, 172, 0.2) 0px 32px 32px, rgba(156, 172, 172, 0.2) 0px 64px 64px;
     }
     .copy {
-      position: fixed;
-      top: 10px;
-      left: 50%;
+    
       transform: translateX(-50%);
       font-size: 16px;
+       color: white;
+    }
+    #title
+    {
+     position: fixed;
+     top: 1px;
+     left: 50%;
      background:#21BD8D;
+     font-family: Berkshire Swash, quicksand, georgia;
+     padding: 0.5% 5% 5px 5%;
     }
     .body
     {
-      	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("marcelo-leal-taF3klwwAWA-unsplash.jpg");
-	background-size: cover; 
-	position: absolute;
-    }
+      	height: 90%;
+      	width: 90%;
+      	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("video.jpg");
+      	background-size: cover; 
+      	position: absolute;
+      }
 	  }    
   </style>
 </head>
 <body class=body>
-  <div class="copy" id="title">Welcome to FindDoc Video Consultation</div>
+  <div class="copy" id="title" style="width: 100%;"><div align="center"><h3>Welcome to FindDoc Video Consultation</h3></div></div>
   <video id="localVideo" autoplay muted></video>
   <video id="remoteVideo" autoplay></video>
+  <br><br>
+   
   <script src="script.js"></script>
 </body>
+
+   
 </html>
